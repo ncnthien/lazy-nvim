@@ -4,5 +4,7 @@
 
 local map = vim.keymap.set
 
--- Select all
 map("n", "<C-a>", "gg<S-v>G")
+
+map("v", "<M-j>", ":m '>+1<CR>gv=gv")
+map("v", "<M-k>", ":m '<-2<CR>gv=gv")
